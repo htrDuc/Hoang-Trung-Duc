@@ -29,8 +29,6 @@ const SwapForm: React.FC = () => {
     if (fromToken && toToken) {
       const from = tokens.find((t) => t.symbol === fromToken);
       const to = tokens.find((t) => t.symbol === toToken);
-      console.log(from)
-      console.log(to)
       if (from && to) {
         return from.price / to.price;
       }
